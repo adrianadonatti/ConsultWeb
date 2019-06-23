@@ -1,0 +1,229 @@
+body {
+	/* retirar a margem */
+	margin: 0;
+}
+
+header {
+	/* largura */
+	width: 100%;
+	/* cor de fundo */
+	background: #25284E;
+	/* altura */
+	height: 50px;
+	/* fixar o header no topo */
+	position: fixed;
+	/* top margem no topo, bottom margem embaixo */
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+nav {
+	/* jogar para a direita */
+	float: right;
+}
+
+/* formata a lista que está dentro da nav */
+nav ul {
+
+}
+
+/* formata o item da lista que está dentro da nav */
+nav ul li {
+	/* retira o marcador do item da lista */
+	list-style: none;
+	/* colocar ao lado do outro */
+	display: inline;
+}
+
+/* configuração do link no nav */
+nav ul li a {
+	/* troca tamanho de family */
+	font: 14px Montserrat, Arial, Tahoma;
+	/* trocar a cor da fonte */
+	color: #FFF;
+	/* tirar sublinhado */
+	text-decoration: none;
+	/* margem */
+	margin: 10px;
+	/* deixar o texto em letras maiúsculas */
+	text-transform: uppercase;
+	/*
+		uppercase - tudo maiúsculo
+		lowercase - tudo minusculo
+		capitalize - primeiras letras maiúsculas
+	*/
+	/* deixar a letra negrito */
+	font-weight: bold;
+}
+
+/* mudar a cor do link ao passar o mouse */
+nav ul li a:hover {
+	color: #EF315A;
+}
+
+p{
+	text-align: justify;
+}
+
+
+/* formatar a classe banner
+as classes devem possuir um . antes do nome
+para diferenciar as classes das tags */
+.banner {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.banner img {
+	width: 100%;
+}
+
+/* classe para centralizar um conteudo */
+.container {
+	width: 960px;
+	/* centralizar na tela */
+	margin: auto;
+}
+
+
+/* Formatar o Título Principal - H1 */
+h1 {
+	font-family: Montserrat, Arial;
+	font-size: 36px;
+	color: #EF315A;
+	font-weight: bold;
+}
+
+/* formatar cada item */
+.item {
+	width: 310px;
+	float: left;
+	font-family: Montserrat, Arial;
+	padding: 5px;
+}
+
+/* deixar imagem do item com 100% do tamanho e borda arredondada */
+.item img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+/* clear para limpar/ignorar os floats */
+.clear {
+	clear: both;
+}
+
+.botao {
+	background-color: #46AC63;
+	color: #FFF;
+	padding: 10px;
+	font-family: Montserrat, Arial;
+	text-decoration: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.depoimentos {
+	background: url(fundo.jpg) fixed;
+	font-family: Montserrat, Arial;
+	color: #FFF;
+	padding: 50px 0;
+	margin: 30px 0;
+}
+
+.depoimentos img {
+	/* tamanho, tipo, cor */
+	border: 5px solid #FFF;
+	/* arredondar os cantos */
+	border-radius: 100%;
+}
+
+.noticias {
+	width: 100%;
+	padding: 50px 0;
+
+}
+
+footer {
+	background: #25284E;
+	width: 100%;
+	padding: 15px 0;
+	font-family: Montserrat, Arial;
+	color: #FFF;
+	margin-top: 50px;
+	float: left;
+}
+
+footer a {
+	color: #FFF;
+}
+
+footer a:hover {
+	color: #FF0;
+}
+
+#menu {
+	border: 1px solid #fff;
+	float: right;
+	margin: 5px 20px;
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	font: 13px Montserrat;
+	display: none;
+}
+
+/* Media Queries */
+@media ( max-width: 480px ) {
+
+	header {
+		width: 100%;
+		float: left;
+		top: 0;
+
+	}
+
+	nav {
+		width: 100%;
+		display: none;
+	}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav ul li {
+		display: block;
+		background: #25284E;
+		padding: 20px;
+		text-align: center;
+	}
+
+	nav ul li a {
+		font-size: 1.5em;
+	}
+
+	.banner {
+		display: none;
+	}
+
+	.container {
+		width: 400px;
+	}
+
+	.item {
+		width: 100%;
+	}
+
+	.depoimentos img {
+		width: 35%;
+	}
+
+	#menu {
+		display: block;
+	}
+
+}
